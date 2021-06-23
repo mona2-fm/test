@@ -24,11 +24,9 @@ jobs:
       uses: atlassian/gajira-create@v2.0.1
       with:
         # 付けたいチケット名を選択(jiraのAPItokenのlabelに合わせる)
-        # project: JIRA-GitHub
-        # プロジェクト名だからラベルではないのでは・・・？
-        project: YDGC
+        project: SUB-YDGC
         # 課題タイプを指定
-        issuetype: サブタスク
+        issuetype: タスク
         # issuesのタイトルが要約になるように設定
         summary: ${{ github.event.issue.title}}
         # issuesの本文が説明になるように設定
